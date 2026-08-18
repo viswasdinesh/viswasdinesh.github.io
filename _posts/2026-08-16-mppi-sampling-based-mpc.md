@@ -11,8 +11,8 @@ tags:
 ---
 
 Classical MPC solves a nonlinear program at every timestep. When the problem is
-convex and smooth, that is a good deal. When it is neither — think obstacle
-avoidance, contact, or discontinuous costs — the solve time is what eventually
+convex and smooth, that is a good deal. When it is neither, think obstacle
+avoidance, contact, or discontinuous costs, the solve time is what eventually
 breaks the controller.
 
 This post walks through Model Predictive Path Integral control (MPPI), which
