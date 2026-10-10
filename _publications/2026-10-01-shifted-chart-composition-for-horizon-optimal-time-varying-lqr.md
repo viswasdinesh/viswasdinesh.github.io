@@ -5,7 +5,8 @@ category: manuscripts
 permalink: /publication/2026-10-01-shifted-chart-composition-for-horizon-optimal-time-varying-lqr
 excerpt: 'An inverse-coordinate composition for fast horizon-optimal time-varying LQR that handles positive semidefinite costs'
 date: 2026-10-01
-venue: 'Submitted to 2027 American Control Conference'
+venue: '2027 American Control Conference'
+status: submitted
 paperurl:
 citation:
 ---

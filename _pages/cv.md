@@ -17,7 +17,7 @@ Education
 Work experience
 ======
 
-* Spring 2021: Research Intern
+* Spring 2025: Research Intern
   * Robotics Research Centre, IIIT-H
   * Duties included: Designing a Fault-tolerant Control for quadrotor, writing an RTOS on Raspberry Pi Pico W
   * Supervisor: Dr. Harikumar Kandath
