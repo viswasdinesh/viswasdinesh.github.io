@@ -1,6 +1,7 @@
 ---
 title: "Matrix Calculus for Roboticists - 1"
 date: 2026-08-28
+published: false
 permalink: /posts/2026/08/matrix-calculus/
 excerpt: "Higher-dimensional Jacobians using Kronecker Product"
 tags:
