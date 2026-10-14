@@ -2,6 +2,7 @@
 title: "MPPI: Model Predictive Control by Sampling"
 date: 2026-08-16
 permalink: /posts/2026/08/mppi-sampling-based-mpc/
+toc: true
 excerpt: "Why gradient-based MPC stalls on non-convex problems, how importance sampling gets us out, and what MPPI looks like on a dynamic lane-merge."
 tags:
   - MPPI

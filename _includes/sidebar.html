@@ -2,7 +2,32 @@
 
 {% if page.author_profile or layout.author_profile or page.sidebar %}
   <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+  {% if page.toc %}
+    <nav class="toc sidebar__toc">
+      <header><h4 class="nav__title"><i class="fa fa-file-alt"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "Contents" }}</h4></header>
+      <ul class="toc__menu" id="sidebar-toc"></ul>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var root = document.getElementById("sidebar-toc");
+        var current = null;
+        document.querySelectorAll(".page__content h2[id], .page__content h3[id]").forEach(function (h) {
+          var li = document.createElement("li");
+          var a = document.createElement("a");
+          a.href = "#" + h.id;
+          a.textContent = h.textContent;
+          li.appendChild(a);
+          if (h.tagName === "H2" || !current) {
+            root.appendChild(li);
+            current = li;
+          } else {
+            var sub = current.querySelector("ul") || current.appendChild(document.createElement("ul"));
+            sub.appendChild(li);
+          }
+        });
+      });
+    </script>
+    </nav>
+  {% elsif page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
   {% if page.sidebar %}
     {% for s in page.sidebar %}
       {% if s.image %}
